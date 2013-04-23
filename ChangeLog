@@ -1,5 +1,137 @@
 
+[2013-11-25]
+* 1. Added: Support for abort, fail, fail-close, ignore-close to WindowHandler
+
+
+[2013-11-19]
+* Updated: version
+
+* Fixed: invalid conversion of rows/cols for table and tablecell
+
+
+[2013-11-18]
+* 1. Added: WindowHandler to handle exception windows (usually thrown in the EDT). Options are to ignore, fail the test.
+
+
+[2013-11-08]
+* Updated: batch files to use new support libraries
+
+* Updated: Version to 3.3.8 Fixed: Stability issues.
+
+
+[2013-10-28]
+* Fixed: Removed warnings
+
+* 1. Removed println(). 2. Added MenuSelectionManager.clearPath() to make tests successful. 3. Classpath updated so that it is not dependent on JUnit3 plugin.
+
+
+[2013-10-25]
+* Fixed: NPE with JDK1.7.0_25 upwards
+
+
+[2013-10-22]
+* Added fix for JDK1.7u25 onwards - appContext not set.
+
+
+[2013-10-16]
+* Fixed: added support for 1.7.0 update 40 workaround
+
+
+[2013-09-27]
+* 1. Modified Marathon.launch to use guice-3.0 folders. 2. Updated Profile to add javax.inject jar from guice-3.0
+
+
+[2013-08-19]
+* 1. Fixed: CSVReader for Python (reads numbers/strings properly now).
+
+
+[2013-08-13]
+* 1. Fixed: ruby.home being set and masking ruby-complete.jar 2. Fixed: Ignore window with 'Starting application...' title unconditionally.
+
+
+[2013-08-12]
+* Updated ChangeLog and Version
+
+* 1. Fixed: performance on huge tables when using default component-info.
+
+* 1. Fixed: JTable gets the converted index from sorter if needed.
+
+* 1. Added support startwindow (MarathonITE)
+
+
+[2013-08-06]
+* 1. Updated guice to 3.0
+
+
+[2013-08-02]
+* 1. Updated Version and ChangeLog
+
+
+[2013-07-15]
+* 1. Release v3.3.5: Updated ChangeLog and Version
+
+* Fixed: Changed the names of script models
+
+
+[2013-07-11]
+* 1. Fixed: Issues with Java 1.7.0 update 25
+
+
+[2013-07-06]
+* 1. Updated ChangeLog and Version.
+
+* 1. Modified: to use jython/jruby standalone/complete jars instead of regular distributions.
+
+
+[2013-07-03]
+* 1. Changed Version and Updated ChangeLog
+
+* 1. Recording/Replaying using link/text for JEditorPane implemented.
+
+
+[2013-06-29]
+* Release v3.3.3: Updated ChangeLog and Version
+
+* 1. Added support for reusing fixtures. 2. Fixed: added .gitattributes to not convert marathon/marathonite scripts
+
+
+[2013-06-24]
+* Changes; 	Main.java, Navigator.java - ignoring empty spaces as module directories while processing MPF 	DisplayWindow.java - validating Module Directory name while creating new Module Directory.
+
+
+[2013-05-10]
+* Fixed: renamed Fixture_properties to fixture_properties to avoid warning
+
+
+[2013-04-29]
+* Removed: marathon-suite-editor
+
+
+[2013-04-26]
+* Fixed: Launchers to use Jython 2.5.3
+
+* Changes: 	build.properties, marathon-python/.classpath - Updated python version to 2.5.3.
+
+* Changes: 	Updated python to version 2.5.3 in marathon-dependencies directory.
+
+
+[2013-04-22]
+* Updated ChangeLog
+
+* Fixed: NPE in DnDAction. Fixed: When invocationTargetException is thrown throwing back the targetted exception. 1. Added a Retry for the setText to wait for the selected row to be rendered. 2. Fixed: Removed call to rewind 3. Fixed: Added bigger timeout if destroyRuntime is called while a shutdown is in progress. 4. Fixed calculation of the click point on table header items. 5, Fixed: Generate error when setup fails due to window is not opened, class not found etc. errors 6. Fixed: marathon.home set to the absolute path of the installation
+
+
+[2013-04-02]
+* 1. Fixed UTs failing due to change in default omap configuration.
+
+
+[2013-03-25]
+* 1. Fixed: No scrollpane for selected tests in suite editor. 2. Fixed: MarathonJava#frame sets the toplevel window only if one is not set.
+
+
 [2013-03-23]
+* Updated: ChangeLog
+
 * Changed: Version number
 
 * 1. Fixed: SuiteEditor not handling tests in sub folders. 2. Added New Suite file option to Navigator new menu

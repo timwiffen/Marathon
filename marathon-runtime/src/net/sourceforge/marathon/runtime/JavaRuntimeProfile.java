@@ -35,6 +35,8 @@ import java.util.Map.Entry;
 import java.util.Properties;
 import java.util.Set;
 
+import javax.inject.Inject;
+
 import net.sourceforge.marathon.Constants;
 import net.sourceforge.marathon.Constants.MarathonMode;
 import net.sourceforge.marathon.api.IPlayer;
@@ -95,6 +97,7 @@ public class JavaRuntimeProfile implements IRuntimeProfile {
         paths.add(ClassPathHelper.getClassPath(Constants.LAUNCHER_MAIN_CLASS));
         paths.add(ClassPathHelper.getClassPath(CSVReader.class));
         paths.add(ClassPathHelper.getClassPath(Yaml.class));
+        paths.add(ClassPathHelper.getClassPath(Inject.class));
         paths.add(ClassPathHelper.getClassPath(Constants.getNSClassName()));
         String contextMenus = System.getProperty(Constants.PROP_CUSTOM_CONTEXT_MENUS);
         if (contextMenus != null) {
@@ -183,8 +186,7 @@ public class JavaRuntimeProfile implements IRuntimeProfile {
         return "other";
     }
 
-    @SuppressWarnings("unchecked")
-    public <T> T getFixtureProperty(String name) {
+    @SuppressWarnings("unchecked") public <T> T getFixtureProperty(String name) {
         return (T) fixtureProperties.get(name);
     }
 
@@ -204,7 +206,8 @@ public class JavaRuntimeProfile implements IRuntimeProfile {
         } catch (IOException e) {
             cwdFile = new File(".");
         }
-        RuntimeLogger.getRuntimeLogger().warning("Runtime", "Given working directory '" + cwd + "' is not valid. Defaulting to " + cwdFile.getAbsolutePath());
+        RuntimeLogger.getRuntimeLogger().warning("Runtime",
+                "Given working directory '" + cwd + "' is not valid. Defaulting to " + cwdFile.getAbsolutePath());
         return cwdFile;
     }
 
@@ -228,7 +231,7 @@ public class JavaRuntimeProfile implements IRuntimeProfile {
         Properties properties = new Properties();
         for (String key : list) {
             Object v = getFixtureProperty(key);
-            if(v != null)
+            if (v != null)
                 properties.put(key, v);
         }
         return properties;

@@ -170,7 +170,7 @@ public class TestDisplayWindow implements Module {
     public void testStoppedWithAppOpenState() throws InterruptedException, InvocationTargetException {
         view.displayView.setState(State.STOPPED_WITH_APP_OPEN);
         assertEnabled(close);
-        assertDisabled(play);
+        assertEnabled(play);
         assertEnabled(record);
         assertDisabled(insert);
         assertEnabled(exit);
@@ -204,11 +204,6 @@ public class TestDisplayWindow implements Module {
         IAnswer<? extends net.sourceforge.marathon.api.module.Module> arg0 = new IAnswer<net.sourceforge.marathon.api.module.Module>() {
 
             public net.sourceforge.marathon.api.module.Module answer() throws Throwable {
-                try {
-                    throw new Exception("I am here");
-                } catch (Exception e) {
-                    e.printStackTrace();
-                }
                 return null;
             }
         };

@@ -102,6 +102,7 @@ public class Constants {
     public static final String PROP_COMPONENT_RESOLVERS = "marathon.component.resolvers";
     public static final String PROP_IGNORE_COMPONENTS = "marathon.component.ignore.components";
     public static final String PROP_APPLICATION_PATH = "marathon.application.classpath";
+    public static final String PROP_APPLICATION_EXTRA_JAR = "marathon.application.extra.jar";
     public static final String ENV_APPLICATION_PATH = "MARATHON_APPLICATION_CLASSPATH";
     public static final String PROP_APPLICATION_ARGUMENTS = "marathon.application.arguments";
     public static final String PROP_APPLICATION_MAINCLASS = "marathon.application.mainclass";
@@ -110,6 +111,8 @@ public class Constants {
     public static final String PROP_APPLICATION_WORKING_DIR = "marathon.application.working.dir";
     public static final String PROP_APPLICATION_TOOLKIT_MENUMASK = "marathon.application.toolkit_menumask";
     public static final String PROP_APPLICATION_DEVMODE = "marathon.application.devmode";
+    public static final String PROP_APPLICATION_START_WINDOW = "marathon.application.start.window";
+    public static final String PROP_APPLICATION_START_WINDOW_REGEX = "marathon.application.start.window.regex";
     public static final String PROP_PROJECT_DESCRIPTION = "marathon.project.description";
     public static final String PROP_PROPPREFIX = "marathon.properties.";
     public static final String PROP_WINDOW_TIMEOUT = "marathon.WINDOW_TIMEOUT";
@@ -145,6 +148,7 @@ public class Constants {
     public static final String PROP_OMAP_RESOLVE_MODE = "net.sourceforge.marathon.objectmap.resolve.mode";
     public static final String PROP_PROJECT_LAUNCHER_MODEL = "marathon.project.launcher.model";
     public static final String FIXTURE_DESCRIPTION = "marathon.fixture.description";
+    public static final String FIXTURE_REUSE = "marathon.fixture.reuse";
     public static String getNSClassName() {
         String s = System.getProperty(PROP_RECORDER_NAMINGSTRATEGY + ".fixture",
                 System.getProperty(PROP_RECORDER_NAMINGSTRATEGY, DEFAULT_NAMING_STRATEGY));

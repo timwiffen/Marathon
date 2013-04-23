@@ -31,14 +31,14 @@ import net.sourceforge.marathon.api.IPlayer;
 import net.sourceforge.marathon.api.IScript;
 import net.sourceforge.marathon.component.MComponent;
 import net.sourceforge.marathon.player.MarathonJava;
-import net.sourceforge.marathon.util.Retry;
 import net.sourceforge.rmilite.Server;
 
 /**
  * This is the server for the separate VM. It utilies rmi-lite for communication
  */
 public class JavaRuntimeLauncher {
-    static final Class<?>[] EXPORTED_INTERFACES = { IMarathonRuntime.class, IScript.class, IPlayer.class, IDebugger.class, ILogger.class };
+    static final Class<?>[] EXPORTED_INTERFACES = { IMarathonRuntime.class, IScript.class, IPlayer.class, IDebugger.class,
+            ILogger.class };
     public static Thread currentThread;
 
     public static void main(String[] args) {
@@ -54,19 +54,10 @@ public class JavaRuntimeLauncher {
     }
 
     private void launch(final String[] args) throws Exception {
-        new Retry("Attempting to restart server", 600, 100, new Retry.Attempt() {
-            public void perform() {
-                try {
-                    int port = Integer.parseInt(args[0]);
-                    Server server = new Server(port);
-                    server.publish(IJavaRuntimeInstantiator.class, new JavaRuntimeInstantiatorImpl(dropFirstArg(args)),
-                            EXPORTED_INTERFACES);
-                } catch (Exception e) {
-                    e.printStackTrace();
-                    retry();
-                }
-            }
-        });
+        int port = Integer.parseInt(args[0]);
+        Server server;
+        server = new Server(port);
+        server.publish(IJavaRuntimeInstantiator.class, new JavaRuntimeInstantiatorImpl(dropFirstArg(args)), EXPORTED_INTERFACES);
     }
 
     private String[] dropFirstArg(String[] args) {
@@ -74,4 +65,5 @@ public class JavaRuntimeLauncher {
         System.arraycopy(args, 1, newArgs, 0, args.length - 1);
         return newArgs;
     }
+
 }
