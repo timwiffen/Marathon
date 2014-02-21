@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component inheritJdk="true">
+	<exclude-output/>
+	<contentEntry url="file://$MODULE_DIR$"/>
+	<lib name="jruby-complete-1.7.2.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/marathon-support/jruby/jruby-complete-1.7.2.jar!/"/>
+	</lib>
+	<lib name="JRubyParser.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/marathon-ruby/lib/JRubyParser.jar!/"/>
+	</lib>
+	<lib name="yydebug.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/marathon-ruby/lib/yydebug.jar!/"/>
+	</lib>
+</component>

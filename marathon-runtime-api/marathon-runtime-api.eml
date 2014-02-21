@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component inheritJdk="true">
+	<exclude-output/>
+	<contentEntry url="file://$MODULE_DIR$"/>
+	<lib name="opencsv-2.2.jar" scope="COMPILE">
+		<srcroot url="file://$MODULE_DIR$/../marathon-support/opencsv/src"/>
+		<relative-module-src project-related="file://$PROJECT_DIR$/marathon-support/opencsv/src"/>
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/marathon-support/opencsv/deploy/opencsv-2.2.jar!/"/>
+	</lib>
+	<lib name="snakeyaml-1.11.jar" scope="COMPILE">
+		<srcroot url="jar://$MODULE_DIR$/../marathon-support/snakeyaml/target/snakeyaml-1.11-sources.jar!/"/>
+		<relative-module-src project-related="jar://$PROJECT_DIR$/marathon-support/snakeyaml/target/snakeyaml-1.11-sources.jar!/"/>
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/marathon-support/snakeyaml/target/snakeyaml-1.11.jar!/"/>
+	</lib>
+	<lib name="forms-1.2.1.jar" scope="COMPILE">
+		<srcroot url="file://$MODULE_DIR$/../marathon-support/forms-1.2.1/src"/>
+		<relative-module-src project-related="file://$PROJECT_DIR$/marathon-support/forms-1.2.1/src"/>
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/marathon-support/forms-1.2.1/forms-1.2.1.jar!/"/>
+	</lib>
+</component>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component inheritJdk="true">
+	<exclude-output/>
+	<contentEntry url="file://$MODULE_DIR$"/>
+	<lib name="atunit-1.0.1.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/marathon-support/atunit-1/atunit-1.0.1.jar!/"/>
+	</lib>
+	<lib name="easymock-3.0.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/marathon-support/easymock-3.0/easymock-3.0.jar!/"/>
+	</lib>
+	<lib name="objenesis-1.2.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/marathon-support/objenesis-1.2/objenesis-1.2.jar!/"/>
+	</lib>
+	<lib name="cglib-nodep-2.2.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/marathon-support/cglib-nodep-2.2.jar!/"/>
+	</lib>
+</component>

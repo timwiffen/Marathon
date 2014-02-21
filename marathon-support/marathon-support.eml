@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component inheritJdk="true">
+	<exclude-output/>
+	<contentEntry url="file://$MODULE_DIR$"/>
+	<lib name="forms-1.2.1.jar" scope="COMPILE">
+		<srcroot url="file://$MODULE_DIR$/forms-1.2.1/src"/>
+		<relative-module-src project-related="file://$PROJECT_DIR$/marathon-support/forms-1.2.1/src"/>
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/marathon-support/forms-1.2.1/forms-1.2.1.jar!/"/>
+	</lib>
+	<lib name="looks-2.2.0.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/marathon-support/looks-2.2.0/looks-2.2.0.jar!/"/>
+	</lib>
+	<lib name="jline-0.9.93.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/marathon-support/jline-0.9.93.jar!/"/>
+	</lib>
+	<lib name="junit-4.8.2.jar" scope="COMPILE">
+		<srcroot url="jar://$MODULE_DIR$/junit4.8.2/junit-4.8.2-src.jar!/"/>
+		<relative-module-src project-related="jar://$PROJECT_DIR$/marathon-support/junit4.8.2/junit-4.8.2-src.jar!/"/>
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/marathon-support/junit4.8.2/junit-4.8.2.jar!/"/>
+	</lib>
+	<lib name="BrowserLauncher2-all-1_3.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/marathon-support/BrowserLauncher2-all-1_3.jar!/"/>
+	</lib>
+	<lib name="vldocking-3.0.0.jar" scope="COMPILE">
+		<srcroot url="file://$MODULE_DIR$/vldocking-3.0.0/src/src"/>
+		<relative-module-src project-related="file://$PROJECT_DIR$/marathon-support/vldocking-3.0.0/src/src"/>
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/marathon-support/vldocking-3.0.0/src/jar/vldocking-3.0.0.jar!/"/>
+	</lib>
+	<lib name="rsyntaxtextarea.jar" scope="COMPILE">
+		<srcroot url="file://$MODULE_DIR$/RSyntaxTextArea/src"/>
+		<relative-module-src project-related="file://$PROJECT_DIR$/marathon-support/RSyntaxTextArea/src"/>
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/marathon-support/RSyntaxTextArea/dist/rsyntaxtextarea.jar!/"/>
+	</lib>
+	<lib name="opencsv-2.2.jar" scope="COMPILE">
+		<srcroot url="file://$MODULE_DIR$/opencsv/src"/>
+		<relative-module-src project-related="file://$PROJECT_DIR$/marathon-support/opencsv/src"/>
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/marathon-support/opencsv/deploy/opencsv-2.2.jar!/"/>
+	</lib>
+	<lib name="osxutil.jar" scope="COMPILE">
+		<srcroot url="file://$MODULE_DIR$/osxutil/src"/>
+		<relative-module-src project-related="file://$PROJECT_DIR$/marathon-support/osxutil/src"/>
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/marathon-support/osxutil/dist/osxutil.jar!/"/>
+	</lib>
+	<lib name="snakeyaml-1.11.jar" scope="COMPILE">
+		<srcroot url="jar://$MODULE_DIR$/snakeyaml/target/snakeyaml-1.11-sources.jar!/"/>
+		<relative-module-src project-related="jar://$PROJECT_DIR$/marathon-support/snakeyaml/target/snakeyaml-1.11-sources.jar!/"/>
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/marathon-support/snakeyaml/target/snakeyaml-1.11.jar!/"/>
+	</lib>
+	<lib name="guice-3.0.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/marathon-support/guice-3.0/guice-3.0.jar!/"/>
+	</lib>
+	<lib name="javax.inject.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/marathon-support/guice-3.0/javax.inject.jar!/"/>
+	</lib>
+</component>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Marathon.iml" filepath="$PROJECT_DIR$/Marathon.iml" />
+      <module fileurl="file://$PROJECT_DIR$/marathon-core/marathon-core.iml" filepath="$PROJECT_DIR$/marathon-core/marathon-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/marathon-extensions/marathon-extensions.iml" filepath="$PROJECT_DIR$/marathon-extensions/marathon-extensions.iml" />
+      <module fileurl="file://$PROJECT_DIR$/marathon-python/marathon-python.iml" filepath="$PROJECT_DIR$/marathon-python/marathon-python.iml" />
+      <module fileurl="file://$PROJECT_DIR$/marathon-rmilite/marathon-rmilite.iml" filepath="$PROJECT_DIR$/marathon-rmilite/marathon-rmilite.iml" />
+      <module fileurl="file://$PROJECT_DIR$/marathon-rsta-editor/marathon-rsta-editor.iml" filepath="$PROJECT_DIR$/marathon-rsta-editor/marathon-rsta-editor.iml" />
+      <module fileurl="file://$PROJECT_DIR$/marathon-ruby/marathon-ruby.iml" filepath="$PROJECT_DIR$/marathon-ruby/marathon-ruby.iml" />
+      <module fileurl="file://$PROJECT_DIR$/marathon-runtime/marathon-runtime.iml" filepath="$PROJECT_DIR$/marathon-runtime/marathon-runtime.iml" />
+      <module fileurl="file://$PROJECT_DIR$/marathon-runtime-api/marathon-runtime-api.iml" filepath="$PROJECT_DIR$/marathon-runtime-api/marathon-runtime-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/marathon-runtime-server/marathon-runtime-server.iml" filepath="$PROJECT_DIR$/marathon-runtime-server/marathon-runtime-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/marathon-support/marathon-support.iml" filepath="$PROJECT_DIR$/marathon-support/marathon-support.iml" />
+      <module fileurl="file://$PROJECT_DIR$/marathon-unit-tests/marathon-unit-tests.iml" filepath="$PROJECT_DIR$/marathon-unit-tests/marathon-unit-tests.iml" />
+      <module fileurl="file://$PROJECT_DIR$/marathon-support/opencsv/opencsv.iml" filepath="$PROJECT_DIR$/marathon-support/opencsv/opencsv.iml" />
+      <module fileurl="file://$PROJECT_DIR$/marathon-support/snakeyaml/snakeyaml.iml" filepath="$PROJECT_DIR$/marathon-support/snakeyaml/snakeyaml.iml" />
+    </modules>
+  </component>
+</project>
+
